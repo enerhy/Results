@@ -11,3 +11,12 @@ print("\nConfusion matrix:")
 print(confusion_matrix(y_test, predicted))
 
 
+-----------Printing Regression Metrics
+pred = lin_model.predict(X_train)
+print('linear train mse: {}'.format(mean_squared_error(np.exp(y_train), np.exp(pred))))
+print('linear train rmse: {}'.format(sqrt(mean_squared_error(np.exp(y_train), np.exp(pred)))))
+print()
+
+
+
+
